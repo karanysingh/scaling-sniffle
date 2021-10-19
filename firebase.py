@@ -2,6 +2,7 @@ from firebase_admin import db
 import firebase_admin
 import json
 value = "-"
+ref = "-"
 def firebase_init():
     databaseURL = "https://wireless-arduino-bot-default-rtdb.firebaseio.com/"
     cred_object = firebase_admin.credentials.Certificate('./wireless-arduino-bot-firebase-adminsdk-jj79n-8b088d8efc.json')
@@ -18,6 +19,7 @@ def readState():
     return str(value)
 
 def modifyState(newVal):
+    firebase_init()
     ref.set({"mode":str(newVal)})
     firebase_init()
     return readState()
