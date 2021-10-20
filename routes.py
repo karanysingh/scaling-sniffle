@@ -22,3 +22,8 @@ def modify():
         resp2 = make_response(modifyState(variable))
         resp2.headers['Access-Control-Allow-Origin'] = '*'
         return resp2
+
+@app.route('/control',methods=['GET'])
+def control():
+    if request.method == 'GET':
+        return render_template("index.html")

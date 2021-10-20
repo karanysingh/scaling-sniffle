@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Wireless Bot</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="">Wireless Bot</a>
+      </nav>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Control it with a click!</h1>
+          
+        </div>
+
+        <div class="col-lg-6">
+            <button type="button" class="btn btn-outline-light btn-lg up">FORWARD </button><br> <br>
+            <button type="button" class="btn btn-outline-light btn-lg left">LEFT  </button>
+            <button type="button" class="btn btn-outline-light btn-lg right">RIGHT</button><br><br>
+            <button type="button" class="btn btn-outline-light btn-lg down">BACKWARD</i> </button>
+          <p id="status">Status: </p>
+            <!-- <button type="button" class="btn btn-outline-light btn-lg fetch">FETCH</i> </button> -->
+          <!-- <img class="title-image" src="images/iphone6.png" alt="iphone-mockup"> -->
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Review 1</h3>
+          <p>Discussed about the components and showed the working bot</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Review 2</h3>
+          <p>More than half of the project is designed and further inputs to be accustomed</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+         <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Review 3</h3>
+          <p>Final Report Submission and changes if required</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  
+  <!-- Footer -->
+
+  <footer class="footer-section" id="footer">
+    <div class="container-fluid">
+      <p>Ujjawal Sharma || Sai Sreekar Sarvepalli || Sajal Tayal || Karan Yuvraj Singh</p>
+      <p>© Embedded Systems and Design</p>
+    </div>
+  </footer>
+
+
+</body>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+</html>
