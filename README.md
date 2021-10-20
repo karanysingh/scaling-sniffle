@@ -1,9 +1,12 @@
-# Over the Internet control arduino bot
+# Over-the-Internet-controlled arduino bot
 - Its the part of project component of embedded systems.
 
 ## Tech Stack
 - Arduino UNO
 - ESP8266 Wifi module
+- l293d motor drivers
+- motors
+- few jumper cables and chasis
 - laptop
 - Arduino IDE
 - Flask
